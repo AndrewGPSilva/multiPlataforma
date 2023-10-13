@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --corfundo: #0f0f0f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(238, 255, 0);
+  border-radius: 10px;
+}
