@@ -4,7 +4,10 @@ Projeto de uma biblioteca online, onde os usuários podem encontrar o melhor de 
 
 ## Tecnologias Utilizadas
 
-- Front-End: Vue 3
+- Front-End:
+  - Vue 3
+  - Typescript
+  
 - Backend (APIs): 
   - PHP com Laravel
   - Java com Spring Boot
@@ -36,4 +39,4 @@ Projeto de uma biblioteca online, onde os usuários podem encontrar o melhor de 
 3. Compile o projeto.
 4. Execute o arquivo JAR gerado.
 
-## Contribuição
+## By: Dev Andrew Silva.
