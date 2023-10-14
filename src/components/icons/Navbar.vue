@@ -37,6 +37,7 @@ nav {
     align-items: center;
     padding: 15px;
     background-color: var(--corfundo);
+    border-bottom: 1px solid #333;
 }
 
 img {

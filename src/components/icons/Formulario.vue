@@ -2,22 +2,22 @@
     <section class="container">
         <form @submit.prevent="salvar">
             <div class="formDiv">
-                <label for="nome">Nome do Livro</label>
+                <label for="nome">Título</label>
                 <input type="text" name="nome" id="nome" v-model="nome" required autocomplete="off"
                     placeholder="Digite o nome do Livro">
             </div>
             <div class="formDiv">
-                <label for="autor">Nome do Autor(a)</label>
+                <label for="autor">Autor(a)</label>
                 <input type="text" name="autor" id="autor" v-model="autor" required autocomplete="off"
                     placeholder="Digite do autor(a) do Livro">
             </div>
             <div class="formDiv">
-                <label for="categoria">Categoria do Livro</label>
+                <label for="categoria">Categoria</label>
                 <input type="text" name="categoria" id="categoria" required v-model="categoria" autocomplete="off"
                     placeholder="Digite a categoria do Livro">
             </div>
             <div class="formDiv">
-                <label for="imagem">Imagem do Livro</label>
+                <label for="imagem">Imagem</label>
                 <input type="text" name="imagem" id="imagem" v-model="imagem" required autocomplete="off"
                     placeholder="Digite o link da imagem do Livro">
             </div>
@@ -71,7 +71,9 @@ export default defineComponent({
 
 .container {
     color: white;
-    background-color: var(--corfundo);
+    /* background-color: var(--corfundo); */
+    background-image: url('../../assets/imagens/footer.png');
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -105,6 +107,8 @@ input {
 
 label {
     margin-top: 5px;
+    color: yellow;
+    font-weight: bold;
 }
 
 </style>
