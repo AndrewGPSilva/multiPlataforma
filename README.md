@@ -1,46 +1,42 @@
-# booksvue
+# Projeto de Biblioteca Online
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto de uma biblioteca online, onde os usuários podem encontrar o melhor de quatro mundos: Animes, Filmes, Livros e Séries. O Front-End está sendo desenvolvido em Vue 3, e o Backend é implementado em PHP com o Laravel e Java usando o Spring Boot, ambas APIs feitas por mim.
 
-## Recommended IDE Setup
+## Tecnologias Utilizadas
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Front-End:
+  - Vue 3
+  - Typescript
+  
+- Backend (APIs): 
+  - PHP com Laravel
+  - Java com Spring Boot
 
-## Type Support for `.vue` Imports in TS
+## Configuração do Ambiente
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### Front-End (Vue 3)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+1. Clone o repositório.
+2. Navegue até a pasta do Front-End.
+3. Instale as dependências.
+4. Inicie o servidor de desenvolvimento.
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### Backend (APIs)
 
-## Customize configuration
+#### API em PHP com Laravel
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Clone o repositório da API Laravel.
+2. Navegue até a pasta da API Laravel.
+3. Instale as dependências.
+4. Configure o arquivo `.env` com as informações de banco de dados e outras configurações necessárias.
+5. Execute as migrações do banco de dados.
+6. Inicie o servidor da API Laravel.
 
-## Project Setup
+#### API em Java com Spring Boot
 
-```sh
-npm install
-```
+1. Clone o repositório da API Spring Boot.
+2. Navegue até a pasta da API Spring Boot.
+3. Compile o projeto.
+4. Execute o arquivo JAR gerado.
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+## By: Dev Andrew Silva.
