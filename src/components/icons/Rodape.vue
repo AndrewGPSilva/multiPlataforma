@@ -5,12 +5,12 @@
             <h1>&copy; Todos direitos reservados a GPSCompany.</h1>
         </div>
         <div class="divIcons">
-            <span class="icon"><i class="pi pi-facebook"></i></span>
-            <span class="icon"><i class="pi pi-linkedin"></i></span>
-            <span class="icon"><i class="pi pi-twitter"></i></span>
+            <span class="icon facebook"><i class="pi pi-facebook"></i></span>
             <span class="icon"><i class="pi pi-github"></i></span>
-            <span class="icon"><i class="pi pi-instagram"></i></span>
-            <span class="icon"><i class="pi pi-whatsapp"></i></span>
+            <span class="icon instagram"><i class="pi pi-instagram"></i></span>
+            <span class="icon linkedin"><i class="pi pi-linkedin"></i></span>
+            <span class="icon whatsapp"><i class="pi pi-whatsapp"></i></span>
+            <span class="icon twitter"><i class="pi pi-twitter"></i></span>
         </div>
     </footer>
 </template>
@@ -34,7 +34,7 @@ footer {
 }
 
 .infoText h1 {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -49,4 +49,15 @@ footer {
     padding: 10px;
 }
 
+.facebook, .linkedin, .twitter {
+    color: rgb(38, 38, 160);
+}
+
+.instagram {
+    color: red;
+}
+
+.whatsapp {
+    color: green;
+}
 </style>

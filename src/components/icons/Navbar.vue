@@ -14,16 +14,16 @@
         <div class="listaDeLinks">
             <ul>
                 <a href="#">
-                    <li>Animes</li>
+                    <li><i class="pi pi-android"></i> Animes</li>
                 </a>
                 <a href="#">
-                    <li>Filmes</li>
+                    <li><i class="pi pi-camera"></i> Filmes</li>
                 </a>
                 <router-link to="/livros">
-                    <li>Livros</li>
+                    <li><i class="pi pi-book"></i> Livros</li>
                 </router-link>
                 <a href="#">
-                    <li>Séries</li>
+                    <li><i class="pi pi-heart-fill"></i> Séries</li>
                 </a>
             </ul>
         </div>

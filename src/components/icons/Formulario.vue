@@ -72,7 +72,7 @@ export default defineComponent({
 .container {
     color: white;
     /* background-color: var(--corfundo); */
-    background-image: url('../../assets/imagens/footer.png');
+    background-image: url('https://i.ibb.co/q1HLx0L/footer.png');
     background-size: cover;
     display: flex;
     justify-content: center;
