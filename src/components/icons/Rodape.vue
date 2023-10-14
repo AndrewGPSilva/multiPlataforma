@@ -1,14 +1,17 @@
-<script lang="ts">
-export default {
-    name: 'FooterGlobal'
-}
-</script>
 
 <template>
     <footer>
         <h1>&copy; Todos direitos reservados a GPSCompany.</h1>
     </footer>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent ({
+    name: 'FooterGlobal'
+})
+</script>
 
 <style scoped>
 footer {
