@@ -1,7 +1,7 @@
 <script lang="ts">
-    export default {
-        name: 'NavbarGlobal'
-    }
+export default {
+    name: 'NavbarGlobal'
+}
 </script>
 
 <template>

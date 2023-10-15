@@ -1,4 +1,5 @@
 <template>
+    <Navbar />
     <div class="containerPai">
         <section class="containerOrdem">
             <h3>Veja a lista por Ordem:</h3>
@@ -9,23 +10,24 @@
             </ul>
         </section>
         <section class="containerLivros">
-            <div v-for="(livro, i) in livros" :key="i" class="cardLivros">
-                <img :src="livro.imagem" alt="Capa do Livro">
+            <div v-for="(data, i) in livros" :key="i" class="cardLivros">
+                <img :src="data.imagem" alt="Capa do Livro">
                 <div class="infosLivro">
-                    <h3>{{ livro.nome }}</h3>
-                    <p><span>Autor: </span>{{ livro.autor }}</p>
-                    <p><span>Categoria: </span>{{ livro.categoria }}</p>
-                    <button @click="excluir(livro.id)" class="btnExcluir">Excluir</button>
+                    <h3>{{ data.nome }}</h3>
+                    <p><span>Autor: </span>{{ data.autor }}</p>
+                    <p><span>Categoria: </span>{{ data.categoria }}</p>
                 </div>
             </div>
         </section>
     </div>
+    <Rodape />
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
-import api from "@/services/api";
 import axios from 'axios';
+import Navbar from '@/components/icons/Navbar.vue';
+import Rodape from '@/components/icons/Rodape.vue';
 
 interface Livro {
     nome: string,
@@ -36,32 +38,25 @@ interface Livro {
 }
 
 export default defineComponent({
-    name: 'ConteudoPrincipal',
+    components: {Navbar, Rodape},
     setup() {
         const livros = ref<Livro[]>([]);
 
-        const fetchLivros = () => {
-            api
-                .get("/livros")
-                .then((response) => livros.value = response.data);
-        }
-
-        onMounted(fetchLivros);
-
-        return { livros };
-    },
-    methods: {
-        async excluir(id: string) {
+        onMounted(async () => {
             try {
-                await axios.delete(`http://127.0.0.1:8000/api/livros/${id}`);
-                console.log("Excluído com sucesso");
-                this.livros = this.livros.filter(livro => livro.id !== id);
+                const response = await axios.get('http://127.0.0.1:8000/api/livros/orderbynome');
+                livros.value = response.data;
+                console.log('Requisição bem-sucedida', livros.value);
             } catch (error) {
-                console.error(error);
+                console.error('Erro na requisição', error);
             }
-        }
+        });
+
+        return {
+            livros
+        };
     }
-})
+});
 </script>
 
 <style scoped>
@@ -79,7 +74,8 @@ export default defineComponent({
     padding-top: 20px;
 }
 
-.containerOrdem h3, li {
+.containerOrdem h3,
+li {
     color: white;
 }
 
@@ -140,5 +136,4 @@ p {
     width: 97%;
     cursor: pointer;
 }
-
 </style>

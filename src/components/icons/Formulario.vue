@@ -53,7 +53,7 @@ export default defineComponent({
 
             axios.post('http://127.0.0.1:8000/api/livros', dados)
                 .then(() => {
-                    console.log('Usuário salvo com sucesso!');
+                    console.log('Livro salvo com sucesso!');
                     this.nome = '',
                     this.autor = '',
                     this.categoria = '',
