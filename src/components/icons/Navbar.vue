@@ -16,9 +16,9 @@ export default {
                 <a href="#">
                     <li><i class="pi pi-android"></i> Animes</li>
                 </a>
-                <a href="#">
+                <router-link to="/filmes">
                     <li><i class="pi pi-camera"></i> Filmes</li>
-                </a>
+                </router-link>
                 <router-link to="/livros">
                     <li><i class="pi pi-book"></i> Livros</li>
                 </router-link>
@@ -57,7 +57,7 @@ li {
 }
 
 a:hover {
-  background-color: rgb(62, 202, 49);
-  border-radius: 10px;
+    background-color: rgb(62, 202, 49);
+    border-radius: 10px;
 }
 </style>

@@ -23,7 +23,7 @@ a {
 
 /* Botão da barra de rolagem (ponteiro) */
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(134, 40, 134);
+  background-color: orangered;
   border-radius: 5px;
 }
 
