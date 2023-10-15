@@ -78,7 +78,6 @@ export default defineComponent({
 .cardLivros img {
     width: 300px;
     height: 270px;
-    margin-top: 0.5px;
     margin-bottom: 10px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
