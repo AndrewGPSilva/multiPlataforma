@@ -16,7 +16,18 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: rgb(62, 202, 49);
-  border-radius: 10px;
+/* Barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Botão da barra de rolagem (ponteiro) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(134, 40, 134);
+  border-radius: 5px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }

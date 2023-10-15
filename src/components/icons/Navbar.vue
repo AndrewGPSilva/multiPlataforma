@@ -55,4 +55,9 @@ li {
     font-size: 25px;
     color: orangered;
 }
+
+a:hover {
+  background-color: rgb(62, 202, 49);
+  border-radius: 10px;
+}
 </style>

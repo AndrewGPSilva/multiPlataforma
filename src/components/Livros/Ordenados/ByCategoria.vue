@@ -5,7 +5,7 @@
             <h3>Veja a lista por Ordem:</h3>
             <ul>
                 <router-link to="/orderbynome"><li>Nome</li></router-link>
-                <router-link to="/orderbycategoria"><li>Categoria</li></router-link>
+                <router-link to="/orderbycategoria"><li><span class="orderSelect">Categoria</span></li></router-link>
                 <router-link to="/orderbyautor"><li>Autor</li></router-link>
             </ul>
         </section>
@@ -72,6 +72,7 @@ export default defineComponent({
     background-color: var(--corfundo);
     text-align: center;
     padding-top: 20px;
+    margin-bottom: -40px;
 }
 
 .containerOrdem h3,
@@ -135,5 +136,12 @@ p {
     margin-top: 5px;
     width: 97%;
     cursor: pointer;
+}
+
+.orderSelect {
+    background-color: rgb(228, 60, 228);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
 }
 </style>

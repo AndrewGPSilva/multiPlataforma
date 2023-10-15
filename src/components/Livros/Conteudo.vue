@@ -77,6 +77,7 @@ export default defineComponent({
     background-color: var(--corfundo);
     text-align: center;
     padding-top: 20px;
+    margin-bottom: -40px;
 }
 
 .containerOrdem h3, li {
@@ -140,5 +141,4 @@ p {
     width: 97%;
     cursor: pointer;
 }
-
 </style>
