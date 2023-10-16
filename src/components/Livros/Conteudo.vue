@@ -92,7 +92,7 @@ ul {
 li {
     margin-top: 20px;
     font-weight: bold;
-    color: red;
+    color: white;
     height: 35px;
     width: 100px;
 }
